@@ -4,9 +4,9 @@
   "description": "Simple react app",
   "main": "index.js",
   "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "start": "node lib/server.js"
-            },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/server.js"
+  },
   "author": "Andrew Mead",
   "license": "MIT",
   "dependencies": {
