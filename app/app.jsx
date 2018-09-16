@@ -11,10 +11,10 @@ require('style!css!sass!applicationStyles');
 
 
 ReactDOM.render(
-  // <Router history={hashHistory}>
-  //   <Route path="/" component={Main}>
-  //   </Route>
-  // </Router>,
-  <Main/>,
+  <Router history={hashHistory}>
+    <Route path="/" component={Main}>
+    </Route>
+  </Router>,
+//  <Main/>,
   document.getElementById('app')
 );
