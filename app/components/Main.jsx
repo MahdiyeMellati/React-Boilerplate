@@ -6,6 +6,8 @@ var Main=React.createClass({
   getInitialState: function()
   {
     return{
+      showCompleted:false,
+      searchText:'',
       todos:
       [
         {
@@ -23,6 +25,13 @@ var Main=React.createClass({
   {
     alert('new todo'+ text)
   },
+  handleSearch: function(showCompleted,searchText)
+  {
+    this.setState({
+      showCompleted:showCompleted,
+      searchText:searchText.toLowerCase()
+    });
+  },
   render: function()
   {
     var{todos}=this.state;
@@ -32,7 +41,7 @@ var Main=React.createClass({
             Todo App
         </div>
         <div>
-            <Search/>
+            <Search onSearch={this.handleSearch}/>
         </div>
 
         <div>
