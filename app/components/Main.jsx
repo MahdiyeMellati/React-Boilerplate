@@ -1,6 +1,7 @@
 var React = require('react');
 var Search= require('Search');
 var TodoList=require('TodoList');
+var AddTodo= require('AddTodo');
 var Main=React.createClass({
   getInitialState: function()
   {
@@ -18,6 +19,10 @@ var Main=React.createClass({
       ]
     };
   },
+  handleAddTodo: function(text)
+  {
+    alert('new todo'+ text)
+  },
   render: function()
   {
     var{todos}=this.state;
@@ -32,6 +37,10 @@ var Main=React.createClass({
 
         <div>
           <TodoList todos={todos}/>
+
+        </div>
+        <div>
+            <AddTodo onAddTodo={this.handleAddTodo}/>
         </div>
       </div>
 
