@@ -16,7 +16,6 @@ handleSubmit: function(e)
   }
 },
   render: function(){
-    debugger;
     return(
   <div>
     <form onSubmit={this.handleSubmit}>
