@@ -13,7 +13,7 @@ var Search= React.createClass(
   render: function()
   {
   return(
-    <div>
+    <div className="container_header">
       <input type="search" ref="searchText" onChange={this.handleSearch} className="input_search" placeholder="Search todos..."></input>
 
         <label for="checkbox1">
